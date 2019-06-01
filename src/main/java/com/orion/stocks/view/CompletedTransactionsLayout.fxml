@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane stylesheets="@Stocks.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orion.stocks.view.CompletedTransactionsController">
+   <children>
+      <TableView prefHeight="400.0" prefWidth="1040.0" stylesheets="@Stocks.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+         <columns>
+            <TableColumn fx:id="brokerColumn" editable="false" prefWidth="55.0" styleClass="string" text="Broker" />
+            <TableColumn fx:id="stockCodeColumn" editable="false" prefWidth="90.0" styleClass="string" text="Stock Code" />
+            <TableColumn fx:id="numberOfSharesColumn" editable="false" prefWidth="70.0" styleClass="integer" text="# of Shares" />
+            <TableColumn fx:id="dateBoughtColumn" editable="false" styleClass="date" text="Date Bought" />
+            <TableColumn fx:id="buyPriceColumn" editable="false" prefWidth="100.0" styleClass="money" text="Buying Price" />
+            <TableColumn fx:id="totalExpensesColumn" editable="false" minWidth="0.0" prefWidth="100.0" styleClass="money" text="Total Expenses" />
+            <TableColumn fx:id="currentPriceColumn" editable="false" prefWidth="100.0" styleClass="money" text="Date Sold" />
+            <TableColumn fx:id="currentGainLossColumn" editable="false" prefWidth="90.0" styleClass="money" text="Selling Price" />
+            <TableColumn fx:id="plusFivePercentColumn" editable="false" styleClass="money" text="Net Sale" />
+            <TableColumn fx:id="gainColumn" editable="false" prefWidth="100.0" styleClass="money" text="Net Gain/Loss" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

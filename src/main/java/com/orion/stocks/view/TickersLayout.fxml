@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane stylesheets="@Stocks.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orion.stocks.view.TickersController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="756.0">
+        <items>
+          <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#refreshTickers" text="Refresh" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tickersTable" layoutY="40.0" prefHeight="610.0" prefWidth="756.0" stylesheets="@Stocks.css">
+         <columns>
+            <TableColumn fx:id="stockCodeColumn" prefWidth="101.0" text="Stock Code" />
+            <TableColumn fx:id="currentPriceColumn" prefWidth="94.0" styleClass="money" text="Current Price" />
+            <TableColumn fx:id="lastUpdatedDate" prefWidth="127.0" text="Last Updated Date" />
+            <TableColumn fx:id="averagePriceColumn" prefWidth="84.0" styleClass="money" text="Average Price" />
+            <TableColumn fx:id="totalSharesColumn" prefWidth="82.0" styleClass="integer" text="Total Shares" />
+            <TableColumn fx:id="gainLossColumn" prefWidth="95.0" styleClass="money" text="Gain/Loss" />
+            <TableColumn fx:id="dailyChange" prefWidth="61.0" styleClass="money" text="Daily Change">
+                <columns>
+                    <TableColumn fx:id="dailyChangeAmount" prefWidth="85.0" styleClass="money" text="Amount" />
+                    <TableColumn fx:id="dailyChangePercent" prefWidth="85.0" styleClass="money" text="Percent" />
+                </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="685.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orion.stocks.view.PositionDialogController">
+   <children>
+      <GridPane gridLinesVisible="true" prefHeight="639.0" prefWidth="300.0" vgap="2.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="120.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="statusField" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" />
+            <ComboBox fx:id="brokerField" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="stockCodeField" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="sharesField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <DatePicker fx:id="dateBoughtDatePicker" editable="false" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <effect>
+                  <ColorAdjust />
+               </effect></DatePicker>
+            <TextField fx:id="buyPriceField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="buyCommissionField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="buyVATField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="buyTransFeeField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="buySCCPField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="totalExpensesField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <DatePicker fx:id="dateSoldDatePicker" editable="false" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <TextField fx:id="sellPriceField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <TextField fx:id="sellCommissionField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <TextField fx:id="sellVATField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <TextField fx:id="sellTransFeeField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <TextField fx:id="sellSCCPField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <TextField fx:id="salesTaxField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+            <TextField fx:id="netSaleField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+            <TextField fx:id="netGainField" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+            <Label prefHeight="30.0" prefWidth="120.0" text="Status">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Broker" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Stock Code" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Shares" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Date Bought" GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Buy Price" GridPane.rowIndex="5">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Buy Commission" GridPane.rowIndex="6">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Buy VAT" GridPane.rowIndex="7">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Buy Trans Fee" GridPane.rowIndex="8">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Buy SCCP" GridPane.rowIndex="9">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Total Expenses" GridPane.rowIndex="10">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Date Sold" GridPane.rowIndex="11">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Sell Price" GridPane.rowIndex="12">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Sell Commission" GridPane.rowIndex="13">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Sell VAT" GridPane.rowIndex="14">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Sell Trans Fee" GridPane.rowIndex="15">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Sell SCCP" GridPane.rowIndex="16">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Sales Tax" GridPane.rowIndex="17">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Net Sale" GridPane.rowIndex="18">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label prefHeight="30.0" prefWidth="120.0" text="Net Gain" GridPane.rowIndex="19">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </GridPane>
+      <Button layoutX="71.0" layoutY="639.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="75.0" text="Save" />
+      <Button layoutX="154.0" layoutY="639.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="75.0" text="Cancel" />
+   </children>
+   <stylesheets>
+      <URL value="@Stocks.css" />
+      <URL value="@Messages.css" />
+   </stylesheets>
+</AnchorPane>

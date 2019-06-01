@@ -1,0 +1,56 @@
+
+.table-row-cell:selected {
+   -fx-text-fill: blue;
+   -fx-selection-bar-text: blue;
+   -fx-text-inner-color: blue;
+   -fx-background-color: RGB(185, 230, 240);
+   -fx-font-weight: bold;
+}
+
+.table-row-cell .money {
+    -fx-alignment: center-right;
+    -fx-padding: 0 5 0 0;
+}
+
+.table-row-cell .integer {
+    -fx-alignment: center-right;
+    -fx-padding: 0 5 0 0;
+}
+
+.table-row-cell .string {
+    -fx-alignment: center-left;
+    -fx-padding: 0 0 0 5;
+}
+
+.table-row-cell .date {
+    -fx-alignment: center;
+    -fx-padding: 0 0 0 0;
+}
+
+.table-row-cell .na {
+    -fx-alignment: center;
+    -fx-padding: 0 0 0 0;
+}
+
+.gain {
+    -fx-text-fill: green;
+}
+
+.loss {
+    -fx-text-fill: red;
+}
+
+.tr-odd {
+    -fx-background-color: lightgreen;
+}
+
+.tr-even {
+    -fx-background-color: lightblue;
+}
+
+.text-field:disabled {
+    -fx-background-color: #E0E0E2;
+    -fx-border-color: #94BBDA;
+    -fx-text-fill: #000000;
+    -fx-opacity: 1.0;
+}

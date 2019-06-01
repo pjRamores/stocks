@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="700.0" prefWidth="1060.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orion.stocks.view.RootController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#createNewPosition" text="New Position" />
+                  <MenuItem mnemonicParsing="false" onAction="#createNewDividend" text="New Dividend" />
+              <MenuItem mnemonicParsing="false" onAction="#handleExitMenu" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane layoutX="276.0" layoutY="100.0" prefHeight="675.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                  <Tab text="Dashboard">
+                   <content>
+                      <fx:include fx:id="dashboard" source="DashboardLayout.fxml" />
+                   </content>
+                  </Tab>
+                <Tab id="openPositionsTab" text="Open Positions">
+                   <content>
+                      <fx:include fx:id="openPositions" source="OpenPositionsLayout.fxml" />
+                   </content>
+                </Tab>
+                  <Tab text="Transactions">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TabPane layoutY="-2.0" prefHeight="649.0" prefWidth="1060.0" tabClosingPolicy="UNAVAILABLE">
+                                <tabs>
+                                  <Tab text="Completed">
+                                    <content>
+                                      <fx:include fx:id="completedTransactions" source="CompletedTransactionsLayout.fxml" />
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Dividends">
+                                    <content>
+                                      <fx:include fx:id="dividends" source="DividendsLayout.fxml" />
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Deposits">
+                                    <content>
+                                      <fx:include fx:id="deposits" source="DepositsLayout.fxml" />
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Withdrawals">
+                                    <content>
+                                      <fx:include fx:id="withdrawals" source="WithdrawalsLayout.fxml" />
+                                    </content>
+                                  </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                <Tab id="tickerTab" text="Ticker">
+                   <content>
+                      <fx:include fx:id="tickers" source="TickersLayout.fxml" />
+                   </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

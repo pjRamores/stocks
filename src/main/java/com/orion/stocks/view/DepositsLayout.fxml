@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane stylesheets="@Stocks.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orion.stocks.view.DepositsController">
+   <children>
+      <TableView fx:id="openPositionsTable" prefHeight="400.0" prefWidth="1040.0" stylesheets="@Stocks.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+         <columns>
+            <TableColumn fx:id="brokerColumn" editable="false" prefWidth="55.0" styleClass="string" text="Broker" />
+            <TableColumn fx:id="stockCodeColumn" editable="false" prefWidth="90.0" styleClass="string" text="Bank" />
+            <TableColumn fx:id="numberOfSharesColumn" editable="false" prefWidth="70.0" styleClass="integer" text="Date" />
+            <TableColumn fx:id="dateBoughtColumn" editable="false" prefWidth="101.0" styleClass="date" text="Total Amount" />
+            <TableColumn fx:id="buyPriceColumn" editable="false" prefWidth="106.0" styleClass="money" text="Charges" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

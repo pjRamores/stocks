@@ -1,0 +1,14 @@
+
+.context-menu .alert {
+   -fx-background-color: RGB(248, 20, 37);
+   -fx-padding: 0;
+}
+
+.context-menu .alert:hover {
+   -fx-background-color: RGB(248, 20, 37);
+   -fx-font-weight: bold;
+}
+
+.menu-item .label {
+   -fx-text-fill: white;
+}
